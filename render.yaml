@@ -1,0 +1,10 @@
+services:
+- type: web
+  name: CRAZY-MD-v2
+  runtime: node
+  repo: https://github.com/CrazyPrince/CRAZY-MD-v2
+  plan: free
+  region: frankfurt
+  buildCommand: npm i
+  startCommand: node lib/client.js
+version: "1"
